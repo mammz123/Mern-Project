@@ -1,0 +1,306 @@
+ .mainbg3 {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 700px;
+     background-color: hsl(300, 33%, 89%);
+ }
+
+ .bgcolor3 {
+     background-color: #ffffff;
+     width: 800px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 20px;
+     position: relative;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+
+
+ }
+
+ .login3-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+     height: 100%;
+     position: relative;
+
+ }
+
+ .login3-form-container {
+     width: 50%;
+     padding: 20px;
+     border-radius: 20px;
+     height: 550px;
+     position: relative;
+     margin-bottom: 20px;
+ }
+
+ .login3-input {
+     padding: 15px;
+     margin-bottom: 20px;
+     border: none;
+     border-bottom: 1px solid #ccc;
+     outline: none;
+     transition: margin 0.3s ease;
+ }
+
+ .login3-title {
+     text-align: center;
+     margin-bottom: 40px;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+     margin-top: 40px;
+ }
+
+ .error-message {
+     color: red;
+     text-align: center;
+     margin-bottom: 20px;
+ }
+
+ .login3-form {
+     display: flex;
+     flex-direction: column;
+     margin-top: 10px;
+ }
+
+
+
+ .halfdiv {
+     width: 450px;
+     height: 100%;
+     background-color: rgb(204, 153, 204);
+     border-radius: 200px 30px 30px 200px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     top: 0;
+     right: -200px;
+     transition: right 0.3s ease;
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1);
+     z-index: 1;
+ }
+
+ .halfdiv.show {
+     right: 0;
+ }
+
+
+ .hello-freind {
+     position: absolute;
+     z-index: 2;
+     top: 189px;
+     left: 530px;
+     color: #000000;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+ }
+
+ .register-account {
+     position: absolute;
+     z-index: 1;
+     top: 236px;
+     left: 518px;
+     color: #000000;
+     white-space: nowrap;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+
+ }
+
+ .qwer {
+     position: absolute;
+     z-index: 1;
+     top: 276px;
+     left: 568px;
+     color: #000000;
+     white-space: nowrap;
+     padding: 10px 20px;
+     background-color: #000000;
+     border: 1px solid #000000;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+
+ }
+
+ .qwer:hover {
+     background-color: rgb(204, 153, 204);
+     color: #ffffff;
+     border-color: transparent;
+     transition: background-color 0.9s;
+ }
+
+
+ .icon-container {
+     display: flex;
+ }
+
+ .no-account {
+     color: #000000;
+     text-decoration: none;
+     margin-top: 0px;
+     cursor: pointer;
+     background-color: transparent;
+     border: none;
+ }
+
+ .user-pass {
+     text-align: center;
+     margin-top: 10px;
+     margin-bottom: 30px;
+     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
+ }
+
+ .logo-containers {
+     display: flex;
+     gap: 12px;
+     margin-top: 10px;
+     margin-left: 40px;
+ }
+
+ .logo-containers i {
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+     padding: 7px;
+     border-radius: 50%;
+     }
+
+
+
+
+ .custom-input {
+     padding: 15px;
+     margin-bottom: 20px;
+     border: none;
+     border-bottom: 2px solid #000000;
+     outline: none;
+     transition: border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+     border-radius: 5px;
+ }
+
+ .custom-input:focus {
+     border-color: rgb(204, 153, 204);
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+ }
+
+ .login3-button {
+     padding: 10px 20px;
+     background-color: #000000;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     width: 100%;
+     margin-top: 20px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+     transition: background-color 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .login3-button:hover {
+     background-color: rgb(204, 153, 204);
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+     transition: background-color 0.9s;
+ }
+
+
+ @keyframes fall {
+     0% {
+         transform: translateY(-100%);
+         opacity: 0;
+     }
+
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+
+ .hello-freind,
+ .register-account,
+ .qwer {
+     position: absolute;
+     z-index: 2;
+     color: #000000;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+     animation: fall 1s ease forwards;
+ }
+
+ .hello-freind {
+     top: 189px;
+     left: 530px;
+ }
+
+ .register-account {
+     top: 236px;
+     left: 518px;
+ }
+
+ .qwer {
+     top: 276px;
+     left: 568px;
+ }
+
+
+ @media (max-width: 768px) {
+
+     .bgcolor3 {
+         width: 90%;
+     }
+
+     .login3-container {
+         flex-direction: column;
+         height: auto;
+     }
+
+     .login3-form-container {
+         width: 100%;
+         height: auto;
+         padding: 10px;
+         margin-bottom: 10px;
+     }
+
+
+     .halfdiv {
+         width: 100vw;
+         height: 100%;
+         right: 0;
+         border-radius: 0;
+         transition: none;
+         z-index: -1;
+     }
+
+     .hello-freind,
+     .register-account,
+     .qwer {
+         position: static;
+         margin: 10px auto;
+         text-align: center;
+     }
+
+     .logo-containers {
+         margin-left: 0;
+         justify-content: center;
+     }
+
+     .logo-containers i {
+         padding: 5px;
+     }
+ }
+
+ .login3-container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 80%;
+     height: 100%;
+     position: relative;
+     animation: fall 1.4s ease forwards;
+ }

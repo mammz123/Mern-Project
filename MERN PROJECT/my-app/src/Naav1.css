@@ -1,0 +1,72 @@
+.navbar {
+  background-color: rgb(47, 43, 47);
+  height: 70px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand img {
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-left: -60px;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: #fff2f2;
+  text-decoration: none;
+  padding: 20px 10px 10px;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-link.home,
+.nav-link.about,
+.nav-link.contact {
+  margin-right: 20px;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(204, 153, 204);
+  transition: width 0.3s;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  width: 80%;
+  justify-content: baseline;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar-nav {
+  margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    justify-content: center;
+  }
+
+  .navbar-nav {
+    margin: 0;
+  }
+
+  .nav-link {
+    padding: 10px 5px;
+    font-size: 12px;
+  }
+}

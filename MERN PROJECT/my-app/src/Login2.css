@@ -1,0 +1,139 @@
+.login2-container {
+    display: flex;
+    align-items: center;
+}
+
+.login2-form-container h6 {
+    text-align: left;
+    margin-bottom: 45px;
+    font-weight: thin;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.36);
+    line-height: 1;
+    font-size: 16px;
+    color: #393434;
+}
+
+.login2-form-container {
+    width: 90%;
+    max-width: 500px;
+    padding: 23px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    top: 34px;
+    left: 30px;
+}
+
+.login2-title {
+    text-align: left;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.login2-error {
+    text-align: left;
+    color: red;
+    margin-bottom: 15px;
+}
+
+.login2-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login2-input {
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border-radius: 0;
+    outline: none;
+    line-height: 2.4;
+}
+
+.login2-button {
+    margin-top: 60px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    padding: 16px 1px;
+    font-size: 14px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 34.6);
+    transition: background-color 0.3s;
+    width: 60%;
+}
+
+.login2-button:hover {
+    background-color: rgb(204, 153, 204);
+    transition: background-color 0.9s;
+
+}
+
+.bgcolor2 {
+    background-color: rgb(204, 153, 204);
+    height: 510px;
+    width: 1000px;
+    margin: 150px auto 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-container2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("./images/login1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 379px;
+    border-radius: 1% 50% 50% 1%;
+    position: relative;
+    margin-top: 68px;
+    right: 19px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.mainbg2 {
+    height: 639px;
+    width: 1519px;
+    background-color: hsl(300, 33%, 89%);
+}
+
+@media (max-width: 768px) {
+    .login2-form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        box-shadow: none;
+    }
+
+    .login2-button {
+        width: 100%;
+    }
+
+    .bgcolor2 {
+        width: 90%;
+        max-width: 500px;
+        margin: 150px auto 0;
+        bottom: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .image-container2 {
+        display: none;
+    }
+}

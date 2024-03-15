@@ -1,0 +1,104 @@
+.booking-container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: rgb(204, 153, 204);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.booking-container2 {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+
+}
+
+.booking-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+.booking-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-container th,
+.booking-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.booking-container table tbody tr:hover td {
+    background-color: rgb(240, 210, 240);
+}
+
+
+.booking-container th {
+    background-color: #f2f2f2;
+}
+
+.booking-container .button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.booking-container .button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 110px;
+    margin-right: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.9s;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 34.6);
+}
+
+
+.booking-container .button:hover {
+    background-color: rgb(204, 153, 204);
+}
+
+.booking-container .button-edit {
+    background-color: #000000;
+}
+
+.booking-container .button-delete {
+    background-color: #000000;
+}
+
+.details-button {
+    /* position: absolute; */
+    /* right: 720px; */
+    top: px;
+    bottom: -300px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.9s;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 34.6);
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+.details-button:hover {
+    background-color: rgb(204, 153, 204);
+}

@@ -1,0 +1,167 @@
+.editt{background-color:rgb(230, 200, 240);
+  text-align: center;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+.bggs {
+  background-color:rgb(230, 200, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 850px;
+  background: linear-gradient(135deg, #f3e5f5, rgb(250, 240, 250));
+
+}
+
+.models {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 10);
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  margin-top: -12px;
+  border: 1px solid #ddd;   
+   transition: background-color 0.3s ease; 
+}
+
+.form-labels {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.models:hover {
+  background-color: rgb(250, 240, 250); 
+}
+.foorms {
+  
+  display: flex;
+  flex-direction: column;    
+  border-radius: 8px;
+  gap: 20px;
+}
+
+.foorms h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  background-color: rgb(204, 153, 204);
+  padding: 8px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+
+.forms-row {
+  display: flex;
+  gap: 10px;
+}
+
+input,
+select {
+  border-radius: 4px;
+  padding: 12px;
+  border: 0; 
+  border-bottom: 1px solid black; 
+  flex: 1;
+  background-color: transparent;
+  outline: none; 
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 400;
+  color: black; 
+}
+
+
+
+
+input::placeholder,
+select::placeholder {
+  color: black; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+input:focus,
+select:focus {
+  box-shadow: 0 -1px 0 0 rgb(102, 0, 102) inset; 
+  border-bottom-color: rgb(102, 0, 102); 
+
+  background-color: white; 
+  outline: none;
+}
+
+.eventbuttons {
+  padding: 15px 60px; 
+  background-color: black; 
+  color: #fff;
+  border: none;
+  border-radius: 3px; 
+  cursor: pointer;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 34.6); 
+  align-self: center; 
+  font-size: 16px; 
+  font-weight: 500; 
+  max-width: 300px; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+
+}
+
+.eventbuttons:hover {
+  background-color: rgb(204, 153, 204);
+  
+}
+
+input#startTime::placeholder,
+input#endTime::placeholder {
+  color: rgba(0, 0, 0, 0.6); 
+  font-style: italic;
+}
+
+#startTime,
+#endTime {
+  padding: 12px;
+  border: 0; 
+  border-bottom: 1px solid black; 
+  flex: 1;
+  background-color: transparent;
+  outline: none; 
+  transition: all 0.3s ease;
+  font-size: 16px; 
+  font-weight: 400;
+  color: black; 
+}
+input:hover,
+select:hover,
+.eventbuttons:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+@media (max-width: 768px) {
+  .model {
+      width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .model {
+      padding: 10px;
+  }
+
+  input,
+  select {
+      padding: 8px;
+      font-size: 0.9rem;
+  }
+
+  button {
+      padding: 8px 16px;
+      font-size: 1rem;
+  }
+}

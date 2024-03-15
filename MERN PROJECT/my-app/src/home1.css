@@ -1,0 +1,425 @@
+.welcome,
+.where {
+  opacity: 0;
+  transform: translateY(-800%);
+  animation: fallIn 1.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes fallIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.home-book {
+  opacity: 0;
+  transform: translateY(-800%);
+  animation: fallIn 3.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes fallIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-200%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+.home1 {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0 0, 0, 0.5)), url("https://media.istockphoto.com/id/1300384615/photo/string-light-bulbs-at-sunset.jpg?s=612x612&w=0&k=20&c=N695nAFz9YSNxynM3auPznfA3E6wXc8D6P60bN1MaEk=");
+  background-size: cover;
+  background-position: center;
+  height: 93vh;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+.welcome {
+  color: white;
+  position: absolute;
+  top: 160px;
+  font-weight: bold;
+  left: 300px;
+  font-size: 80px;
+  text-shadow: 2px 2px 4px rgba(204, 153, 204, 0.5);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2px;
+}
+
+.where {
+  color: white;
+  position: absolute;
+  top: 280px;
+  font-weight: bold;
+  left: 150px;
+  font-weight: 500;
+  font-size: 39px;
+  text-shadow: 2px 2px 4px rgba(204, 153, 204, 0.3);
+  text-align: center;
+  line-height: 1.2;
+  width: 700px;
+}
+
+
+.home-book {
+  margin-top: 330px;
+  margin-left: 440px;
+  padding: 10px 20px;
+  background-color: rgb(204, 153, 204);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(204, 153, 204, 0.7);
+  font-weight: 100px;
+
+}
+
+.home-book:hover {
+  box-shadow: 0 4px 8px rgba(204, 153, 204, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.link-button {
+  color: rgb(0, 0, 0);
+  transition: background-color 0.1s ease;
+
+  font-weight: 590;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  font-size: larger;
+
+}
+
+.link-button:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 2px 4px rgba(204, 153, 204, 0.3);
+
+}
+
+.transparent-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.transparent-div h3 {
+  text-shadow: 2px 2px 4px rgba(204, 153, 204, 0.5);
+  color: white;
+}
+
+.transparent-div>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-shadow: 2px 2px 2px 4px rgba(204, 153, 204, 0.2);
+
+}
+
+.transparent-div img.bo-image {
+  filter: invert(100%) brightness(100%) contrast(100%);
+  height: 40px;
+  margin: 40px 12px -10px 20px;
+  /* Center the image horizontally */
+}
+
+.transparent-div img.mo-image {
+  filter: invert(100%) brightness(100%) contrast(100%);
+  height: 40px;
+  margin: 40px 12px -10px 20px;
+}
+
+.transparent-div img.co-image {
+  filter: invert(100%) brightness(100%) contrast(100%);
+  height: 40px;
+  margin: 40px 12px -10px 20px;
+}
+
+.transparent-div img.so-image {
+  filter: invert(100%) brightness(100%) contrast(100%);
+  height: 40px;
+  margin: 40px 12px -10px 20px;
+}
+
+
+
+
+
+
+
+.showcase {
+  margin-top: 380px;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: calc(30% - 20px);
+  margin-bottom: 20px;
+  display: flex;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  background-color: rgb(204, 153, 204);
+  text-align: center;
+  height: 200px;
+}
+
+
+.card .card-image {
+
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-color: rgb(60, 0, 60);
+  margin-left: 10px;
+  margin-top: 20px;
+  border: 2px rgb(58, 57, 57);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+.card .content {
+  flex: 1;
+  padding: 20px;
+  margin-top: -170px;
+  margin-left: 110px;
+}
+
+.card .content h2 {
+  margin-top: 0;
+  font-size: 24px;
+}
+
+.card .content p {
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+
+.card-text {
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: 400;
+}
+
+
+.card-button {
+  margin-top: 13px;
+  margin-left: 49px;
+  background-color: #000000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.5s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.card-button:hover {
+  background-color: rgb(102, 0, 102);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.events-heading {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 30px;
+}
+
+
+
+
+.port {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  padding-top: 7%;
+  text-align: center;
+
+
+}
+
+.caro {
+  padding-top: 2%;
+}
+
+.round-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0 16px rgba(0, 0, 0, 0.9);
+}
+
+.carousel-images {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-img {
+  object-fit: cover;
+  overflow: hidden;
+  height: 300px;
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  border: 36px solid rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+.icons {
+  display: flex;
+  color: rgb(0, 0, 0);
+  justify-content: space-evenly;
+  padding-top: 7%;
+}
+
+.plus {
+  display: flex;
+  margin-left: 240px;
+}
+
+.plus h2 {
+  text-shadow: 2px 2px 4px rgba(113, 33, 113, 0.5);
+  margin-left: 10px;
+}
+
+
+.cont {
+  display: flex;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: large;
+}
+
+.cont p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  margin-left: 10px;
+}
+
+
+.show {
+  display: flex;
+  height: 310px;
+  width: 400px;
+  padding: 20px;
+
+
+}
+
+.aa {
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  border-top: 45px solid rgb(204, 153, 204);
+  border-bottom: 45px solid rgb(41, 39, 39);
+  border-radius: 10px;
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 19px;
+}
+
+.aa:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+
+
+.case {
+  padding-top: 5%;
+  margin-top: 5%;
+  font-size: 40px;
+  color: rgb(0, 0, 0);
+  margin-left: 650px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.show2 {
+  display: flex;
+  height: 310px;
+  width: 400px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.bb {
+  height: 410px;
+  width: 500px;
+  margin-left: 500px;
+  border-radius: 50%;
+  margin-top: 20px;
+  border-top: 10px solid rgb(0, 0, 0);
+  border-bottom: 10px solid rgb(0, 0, 0);
+  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.7);
+
+}
+
+.iconss {
+  margin-left: 600px;
+  display: flex;
+  gap: 16px;
+  color: rgb(87, 56, 86);
+  padding-top: 4%;
+  padding-bottom: 5%;
+}
+
+.ico {
+  font-size: 2em;
+  margin: 0 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 50%;
+
+}
+
+
+
+
+.footerdiv {
+  height: 400px;
+  width: 1515px;
+  background: linear-gradient(to right, black, rgb(48, 22, 48), rgb(48, 22, 48), black);
+
+}
+
+.footer1 {
+  margin-left: 170px;
+
+}
